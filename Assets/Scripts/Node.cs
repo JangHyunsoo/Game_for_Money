@@ -6,14 +6,14 @@ public class Node : MonoBehaviour
 {
     public Vector2Int m_tGamePos { get; set; }
 
-    private Color m_eColor;
+    private Team m_pTeam;
     private SpriteRenderer m_rdRenderer;
 
     // Start is called before the first frame update
     void Start()
     {
         m_rdRenderer = GetComponent<SpriteRenderer>();
-        m_rdRenderer.color = m_eColor;
+        m_rdRenderer.color = m_pTeam.color;
     }
 
     // Update is called once per frame
@@ -39,11 +39,11 @@ public class Node : MonoBehaviour
 
     private void OnMouseExit()
     {
-        m_rdRenderer.color = m_eColor;
+        m_rdRenderer.color = m_pTeam.color;
     }
 
-    public void SetColor(Color eColor)
+    public void SetTeam(Team pTeam)
     {
-        m_eColor = eColor;
+        m_pTeam = pTeam;
     }
 }

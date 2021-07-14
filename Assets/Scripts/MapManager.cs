@@ -42,12 +42,27 @@ public class MapManager : MonoBehaviour
 
     [SerializeField] private GameObject m_goNodePrefab;
 
+    [SerializeField] private int m_iMyTeam;
+    [SerializeField] private Color[] m_arrTeamColor;
+
     private Node[,] m_arrNode;
     private Transform m_trMapHolder;
+    private List<Team> m_listTeam;
+    private Team m_pEmptyTeam;
 
     public bool Init()
     {
         m_arrNode = new Node[m_iWidth, m_iHeight];
+        m_listTeam = new List<Team>();
+        m_pEmptyTeam = new Team();
+
+        int iTeamSize = m_arrTeamColor.Length;
+
+        for(int i = 0; i < iTeamSize; i++)
+        {
+            m_listTeam.Add(new Team(i, m_arrTeamColor[i]));
+            Debug.Log(m_arrTeamColor[i]);
+        }
 
         return true;
     }
@@ -77,11 +92,10 @@ public class MapManager : MonoBehaviour
         {
             for (int y = 0; y < m_iHeight; y++)
             {
-                m_arrNode[x, y] = CreateNodeWithGamePos(new Vector2Int(x, y));
                 if (IsOurTeam(x, y))
-                    m_arrNode[x, y].SetColor(Color.red);
+                    m_arrNode[x, y] = m_listTeam[m_iMyTeam].CreateNodeWithGamePos(new Vector2Int(x, y));
                 else
-                    m_arrNode[x, y].SetColor(Color.blue);
+                    m_arrNode[x, y] = m_pEmptyTeam.CreateNodeWithGamePos(new Vector2Int(x, y));
             }
         }
     }
