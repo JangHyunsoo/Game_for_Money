@@ -52,6 +52,22 @@ public class MapManager : MonoBehaviour
         return true;
     }
 
+    private bool IsOurTeam(int x, int y) // ture : team1 | false : team2
+    {
+        int iXhalf = (int)Mathf.Round(m_iWidth / 2);
+        int[] arrYHalf = { 0, 3, 4 };
+
+        if (x == iXhalf)
+        {
+            foreach (int iYHalf in arrYHalf)
+            {
+                if (y == iYHalf) return false;
+            }
+        }
+
+        return x >= 0 && x <= iXhalf;
+    }
+
     public void CreateMap(Transform _trHolder)
     {
         m_arrNode = new Node[m_iWidth, m_iHeight];
@@ -62,6 +78,10 @@ public class MapManager : MonoBehaviour
             for (int y = 0; y < m_iHeight; y++)
             {
                 m_arrNode[x, y] = CreateNodeWithGamePos(new Vector2Int(x, y));
+                if (IsOurTeam(x, y))
+                    m_arrNode[x, y].SetColor(Color.red);
+                else
+                    m_arrNode[x, y].SetColor(Color.blue);
             }
         }
     }
