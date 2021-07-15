@@ -42,27 +42,12 @@ public class MapManager : MonoBehaviour
 
     [SerializeField] private GameObject m_goNodePrefab;
 
-    [SerializeField] private int m_iMyTeam;
-    [SerializeField] private Color[] m_arrTeamColor;
-
     private Node[,] m_arrNode;
     private Transform m_trMapHolder;
-    private List<Team> m_listTeam;
-    private Team m_pEmptyTeam;
 
     public bool Init()
     {
         m_arrNode = new Node[m_iWidth, m_iHeight];
-        m_listTeam = new List<Team>();
-        m_pEmptyTeam = new Team();
-
-        int iTeamSize = m_arrTeamColor.Length;
-
-        for(int i = 0; i < iTeamSize; i++)
-        {
-            m_listTeam.Add(new Team(i, m_arrTeamColor[i]));
-            Debug.Log(m_arrTeamColor[i]);
-        }
 
         return true;
     }
@@ -93,9 +78,9 @@ public class MapManager : MonoBehaviour
             for (int y = 0; y < m_iHeight; y++)
             {
                 if (IsOurTeam(x, y))
-                    m_arrNode[x, y] = m_listTeam[m_iMyTeam].CreateNodeWithGamePos(new Vector2Int(x, y));
+                    m_arrNode[x, y] = RuleManager.Instance.MyTeam.CreateNodeWithGamePos(new Vector2Int(x, y));
                 else
-                    m_arrNode[x, y] = m_pEmptyTeam.CreateNodeWithGamePos(new Vector2Int(x, y));
+                    m_arrNode[x, y] = RuleManager.Instance.EmptyTeam.CreateNodeWithGamePos(new Vector2Int(x, y));
             }
         }
     }
@@ -105,7 +90,7 @@ public class MapManager : MonoBehaviour
         GameObject go = Instantiate(m_goNodePrefab, ToWorldPos(_tGamePos), new Quaternion((_tGamePos.x + _tGamePos.y) % 2 * 180, 0f, 0f, 0f));
         go.transform.SetParent(m_trMapHolder);
         Node node = go.GetComponent<Node>();
-        node.m_tGamePos = _tGamePos;
+        node.GamePos = _tGamePos;
         return node;
     }
 

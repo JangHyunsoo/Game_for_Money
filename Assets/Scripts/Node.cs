@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class Node : MonoBehaviour
 {
-    public Vector2Int m_tGamePos { get; set; }
-
+    private Vector2Int m_tGamePos;
     private Team m_pTeam;
     private SpriteRenderer m_rdRenderer;
+    private Transform m_trCharacter;
+
+    // get set
+    public Vector2Int GamePos { get { return GamePos; } set { m_tGamePos = value; } }
+    public Transform trCharacter { get { return m_trCharacter; } set { m_trCharacter = value; } }
 
     // Start is called before the first frame update
     void Start()
