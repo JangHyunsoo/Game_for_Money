@@ -55,7 +55,6 @@ public class RuleManager : MonoBehaviour
         for (int i = 0; i < iTeamSize; i++)
         {
             m_listTeam.Add(new Team(i, m_arrTeamColor[i]));
-            Debug.Log(m_arrTeamColor[i]);
         }
 
         return true;

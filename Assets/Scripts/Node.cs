@@ -28,7 +28,8 @@ public class Node : MonoBehaviour
 
     private void OnMouseDown()
     {
-        // do somehting
+        if(m_trCharacter == null)
+            m_trCharacter = CharacterManager.Instance.CreateCharacterWithSelect(m_tGamePos);
     }
 
     private void OnMouseUp()

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Hero4
   m_EditorClassIdentifier: 
   m_strName: hero4
-  m_cpSprite: {fileID: 0}
+  m_cpSprite: {fileID: 21300000, guid: 0229a9a36d3910242ab74f2121bb558e, type: 3}
   m_listSynergy:
   - 
   - 

@@ -10,10 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 30d8426b4c4994a41a2c020a2d82c424, type: 3}
-  m_Name: Hero3
+  m_Name: Hero7
   m_EditorClassIdentifier: 
-  m_strName: hero3
-  m_cpSprite: {fileID: 21300000, guid: 26f8effc7c7074040a9c9e80fc519769, type: 3}
-  m_listSynergy:
-  - job2
-  - tribe1
+  m_strName: 
+  m_cpSprite: {fileID: 0}
+  m_listSynergy: []

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Character : MonoBehaviour
 {
-    // variable
+    // data
     private Vector2Int m_tGamePos;
     private CharacterStatus m_pStatus;
     private SpriteRenderer m_cpSpriteRender;

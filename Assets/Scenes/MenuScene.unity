@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 26937590}
   - component: {fileID: 26937589}
   m_Layer: 5
-  m_Name: SelectBtn1
+  m_Name: SelectBtn0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -204,7 +204,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 26937590}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2074121877}
+        m_TargetAssemblyTypeName: CharacterManager, Assembly-CSharp
+        m_MethodName: CharacterSelectBtn
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &26937590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -405,7 +417,7 @@ GameObject:
   - component: {fileID: 611095616}
   - component: {fileID: 611095615}
   m_Layer: 5
-  m_Name: SelectBtn7
+  m_Name: SelectBtn6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -473,7 +485,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 611095616}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2074121877}
+        m_TargetAssemblyTypeName: CharacterManager, Assembly-CSharp
+        m_MethodName: CharacterSelectBtn
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 6
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &611095616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -537,7 +561,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 728996019}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -555,6 +579,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af7633561533c544c965d516eb663bfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &798171157
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 798171158}
+  m_Layer: 0
+  m_Name: CharacterHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &798171158
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798171157}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1242601030
 GameObject:
   m_ObjectHideFlags: 0
@@ -568,7 +622,7 @@ GameObject:
   - component: {fileID: 1242601033}
   - component: {fileID: 1242601032}
   m_Layer: 5
-  m_Name: SelectBtn5
+  m_Name: SelectBtn4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -636,7 +690,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1242601033}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2074121877}
+        m_TargetAssemblyTypeName: CharacterManager, Assembly-CSharp
+        m_MethodName: CharacterSelectBtn
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1242601033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -731,7 +797,7 @@ GameObject:
   - component: {fileID: 1253712599}
   - component: {fileID: 1253712598}
   m_Layer: 5
-  m_Name: SelectBtn3
+  m_Name: SelectBtn2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -799,7 +865,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1253712599}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2074121877}
+        m_TargetAssemblyTypeName: CharacterManager, Assembly-CSharp
+        m_MethodName: CharacterSelectBtn
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1253712599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -851,7 +929,7 @@ GameObject:
   - component: {fileID: 1419582678}
   - component: {fileID: 1419582677}
   m_Layer: 5
-  m_Name: SelectBtn2
+  m_Name: SelectBtn1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -919,7 +997,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1419582678}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2074121877}
+        m_TargetAssemblyTypeName: CharacterManager, Assembly-CSharp
+        m_MethodName: CharacterSelectBtn
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1419582678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1071,7 +1161,7 @@ GameObject:
   - component: {fileID: 1738150802}
   - component: {fileID: 1738150801}
   m_Layer: 5
-  m_Name: SelectBtn4
+  m_Name: SelectBtn3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1139,7 +1229,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1738150802}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2074121877}
+        m_TargetAssemblyTypeName: CharacterManager, Assembly-CSharp
+        m_MethodName: CharacterSelectBtn
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1738150802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1191,7 +1293,7 @@ GameObject:
   - component: {fileID: 1858768478}
   - component: {fileID: 1858768477}
   m_Layer: 5
-  m_Name: SelectBtn8
+  m_Name: SelectBtn7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1259,7 +1361,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1858768478}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2074121877}
+        m_TargetAssemblyTypeName: CharacterManager, Assembly-CSharp
+        m_MethodName: CharacterSelectBtn
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 7
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1858768478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1311,7 +1425,7 @@ GameObject:
   - component: {fileID: 1864761894}
   - component: {fileID: 1864761893}
   m_Layer: 5
-  m_Name: SelectBtn6
+  m_Name: SelectBtn5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1379,7 +1493,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1864761894}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2074121877}
+        m_TargetAssemblyTypeName: CharacterManager, Assembly-CSharp
+        m_MethodName: CharacterSelectBtn
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1864761894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1430,6 +1556,7 @@ GameObject:
   - component: {fileID: 2074121873}
   - component: {fileID: 2074121876}
   - component: {fileID: 2074121875}
+  - component: {fileID: 2074121877}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1465,7 +1592,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2074121875
 MonoBehaviour:
@@ -1497,3 +1624,21 @@ MonoBehaviour:
   m_arrTeamColor:
   - {r: 0.6981132, g: 0.16135636, b: 0.16135636, a: 1}
   - {r: 0.2559185, g: 0.37440297, b: 0.764151, a: 1}
+--- !u!114 &2074121877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074121872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e65d7a2a4147533429b83fec8b00d564, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listStatus:
+  - {fileID: 11400000, guid: a22945dd36d101049bc00b51309fc05e, type: 2}
+  - {fileID: 11400000, guid: fb4faf6bae5ea2d4d91ac5247636e9a7, type: 2}
+  - {fileID: 11400000, guid: 2fc196a734bda1a4cbe20e3c428e03b8, type: 2}
+  - {fileID: 11400000, guid: b55fe595aadd4294e8734c945e1e9650, type: 2}
+  m_goCharacterPrefab: {fileID: 6028412991988926734, guid: e87ef658a189b884a902d0d23c32c959, type: 3}

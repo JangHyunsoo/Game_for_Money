@@ -41,8 +41,9 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        if(!MapManager.Instance.Init()) return;
+        if (!MapManager.Instance.Init()) return;
         if (!RuleManager.Instance.Init()) return;
+        if (!CharacterManager.Instance.Init()) return;
     }
 
     private void Update()
